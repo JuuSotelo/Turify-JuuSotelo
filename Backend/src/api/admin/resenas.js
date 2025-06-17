@@ -38,4 +38,4 @@ router.delete('/:id', async (req, res) => {
 
 export default router;
 
-//seguir probando por las dudas
+//seguir probando por las dudas con el front
