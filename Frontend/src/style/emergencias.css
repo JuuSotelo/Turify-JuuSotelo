@@ -1,0 +1,194 @@
+@import url('./global.css');
+@import url('./empresas_cards.css');
+
+/* Personalización específica para Emergencias */
+
+/* Sección de servicios de emergencia */
+.servicios-emergencia {
+    padding: 2.5rem 1.5rem;
+}
+
+.header-emergencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicios-emergencia h2 {
+    color: #dc2626;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Página de Emergencias */
+.emergencias-section {
+    padding: 2rem 1.5rem;
+    background: #f7f5ed;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.emergencias-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.emergencias-section .header {
+    text-align: center !important;
+    margin-bottom: 1rem;
+    display: block !important;
+    flex-direction: unset !important;
+    align-items: unset !important;
+}
+
+.emergencias-section .header h1 {
+    color: #dc2626;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.emergencias-section .decorative-underline {
+    width: 80px;
+    height: 5px;
+    background: #dc2626;
+    border-radius: 3px;
+    margin: 0 auto 0.5rem auto;
+}
+
+
+
+.emergencias-section .breadcrumb a {
+    color: #dc2626;
+    text-decoration: none;
+}
+
+.emergencias-section .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Botón volver */
+.btn-volver {
+    padding: 0.5rem 1rem;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn-volver:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Título de categoría */
+.emergencias-section .titulo-categoria {
+    color: #dc2626;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Personalización de colores para Emergencias - Cards */
+.servicios-emergencia .badge-categoria,
+.emergencias-section .badge-categoria {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.servicios-emergencia .empresa-card h3,
+.emergencias-section .empresa-card h3 {
+    color: #dc2626;
+}
+
+.servicios-emergencia .info-empresa svg,
+.emergencias-section .info-empresa svg {
+    color: #dc2626;
+}
+
+.servicios-emergencia .info-empresa a,
+.emergencias-section .info-empresa a {
+    color: #dc2626;
+}
+
+.servicios-emergencia .btn-llamar,
+.emergencias-section .btn-llamar {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.servicios-emergencia .btn-llamar:hover,
+.emergencias-section .btn-llamar:hover {
+    background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+.servicios-emergencia .btn-ver-detalle,
+.emergencias-section .btn-ver-detalle {
+    background: linear-gradient(135deg, #374151, #4b5563);
+    color: white;
+    border: none;
+}
+
+.servicios-emergencia .btn-ver-detalle:hover,
+.emergencias-section .btn-ver-detalle:hover {
+    background: linear-gradient(135deg, #1f2937, #374151);
+}
+
+.servicios-emergencia .empresa-card:hover,
+.emergencias-section .empresa-card:hover {
+    border-color: #dc2626;
+    box-shadow: 0 16px 48px rgba(220, 38, 38, 0.15);
+}
+
+.servicios-emergencia .placeholder,
+.emergencias-section .placeholder {
+    background: linear-gradient(135deg, #fef2f2, #fee2e2);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .servicios-emergencia {
+        padding: 1.5rem 1rem;
+    }
+
+    .header-emergencia {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .servicios-emergencia h2 {
+        font-size: 1.6rem;
+    }
+
+    .emergencias-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .emergencias-section .header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-emergencia h2 {
+        font-size: 1.4rem;
+    }
+
+    .emergencias-section .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .emergencias-section .titulo-categoria {
+        font-size: 1.5rem;
+    }
+}
